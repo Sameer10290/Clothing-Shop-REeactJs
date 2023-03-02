@@ -1,0 +1,74 @@
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list a {
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.list a.active {
+    border-radius: 10px;
+}
+
+.list a:hover,
+.list a.active {
+    transition: .3s;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.badge {
+    background-color: #1ad1b9;
+    border-radius: 30px;
+    padding: .15rem .8rem;
+    color: #1d1d1d;
+}
+
+.navbar img {
+    width: 150px;
+    position: absolute;
+    top: 10px
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar img {
+        width: 100px;
+        top: 20px
+    }
+    .list a {
+        padding: 8px;
+        font-size: 12px;
+        transition: .3s;
+        border-radius: 5px;
+    }
+    .badge {
+        padding: .2rem .4rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar img {
+        width: 80px;
+    }
+    .list a {
+        padding: 5px;
+    }
+}

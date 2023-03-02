@@ -1,0 +1,60 @@
+.card {
+    background-color: rgb(255, 255, 255);
+    margin: 10px 60px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ul {
+    padding: 0;
+}
+
+.card li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image img {
+    width: 140px;
+    height: 125px;
+}
+
+.detail h1, .detail p {
+    margin: 0;
+    
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+.button button {
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(206, 206, 206);
+}
+
+.button button:hover {
+    background-color: rgb(134, 135, 136);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.total p {
+    border: 1px solid rgba(177, 177, 177, 0.44);
+    padding: 10px;
+}
+
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
